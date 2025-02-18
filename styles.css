@@ -1,0 +1,14 @@
+
+::selection {
+    background: rgb(187 247 208);
+    opacity: 20;
+
+  }
+
+  @font-face {
+     font-family: 'productsans';
+     src: url('/fonts/Product\ Sans\ Bold.ttf'),
+          url('/fonts/Product\ Sans\ Regular.ttf');
+     font-weight: normal;
+     font-style: normal;
+   }
