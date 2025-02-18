@@ -1,3 +1,4 @@
+<<<<<<< HEAD
  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900&display=swap');
 
 
@@ -24,4 +25,32 @@
           url('/fonts/Product\ Sans\ Regular.ttf') format('.ttf');
      font-weight: normal;
      font-style: normal;
+=======
+ @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900&display=swap');
+
+
+  @font-face {
+    font-family: 'productsans';
+    font-weight: 400;
+    src: url(/fonts/Product\ Sans\ Regular.ttf);
+  }
+  @font-face {
+    font-family: 'productsans';
+    font-weight: 500;
+    src: url(/fonts/Product\ Sans\ Bold.ttf);
+  }
+
+::selection {
+    background: rgb(207, 238, 243);
+    opacity: 20;
+
+  }
+
+  @font-face {
+     font-family: 'productsans';
+     src: url('/fonts/Product\ Sans\ Bold.ttf') format('.ttf'),
+          url('/fonts/Product\ Sans\ Regular.ttf') format('.ttf');
+     font-weight: normal;
+     font-style: normal;
+>>>>>>> 877ff19 (Second commit)
    }

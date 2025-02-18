@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 "tailwindCSS.includeLanguages": {
     "html": "html",
     "javascript": "javascript",
@@ -5,4 +6,13 @@
 },
 "editor.quickSuggestions": {
     "strings": true
+=======
+"tailwindCSS.includeLanguages": {
+    "html": "html",
+    "javascript": "javascript",
+    "css": "css"
+},
+"editor.quickSuggestions": {
+    "strings": true
+>>>>>>> 877ff19 (Second commit)
 }
