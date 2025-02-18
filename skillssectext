@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
  <section data-aos="fade-up"  data-aos-duration="3000" 
  data-aos-anchor-placement="top-bottom"  id="skills" class="z-0">
     <div  " class="mb-16 mx-auto pt-20 flex w-screen">
@@ -108,6 +109,8 @@
     </div>
    </div>
 =======
+=======
+>>>>>>> 877ff19f4bfb71e76cc2a03e8aa98f61a6ea25c8
  <section data-aos="fade-up"  data-aos-duration="3000" 
  data-aos-anchor-placement="top-bottom"  id="skills" class="z-0">
     <div  " class="mb-16 mx-auto pt-20 flex w-screen">
@@ -216,5 +219,8 @@
         </a>
     </div>
    </div>
+<<<<<<< HEAD
 >>>>>>> 877ff19 (Second commit)
+=======
+>>>>>>> 877ff19f4bfb71e76cc2a03e8aa98f61a6ea25c8
   
