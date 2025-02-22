@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        Rohi Aluede
-    </title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content ="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale-1.0"/> 
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.config.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+    
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,13 +34,26 @@
     rel="stylesheet"
     />
     
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-white min-h-screen">
     
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Outfit:wght@400;500;600;800&display=swap');
+    </style>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" type="text/css" href="design.css"/>
+    
+    <title>
+        Rohi Aluede
+    </title>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+</head>
+<body class="bg-gradient-to-b from-slate-50 to-slate-100 min-h-screen font-[Montserrat]">
+    <!-- Navigation -->
     <nav class="bg-white  top-0 left-0 z-50 h-20  "> 
         <div class=" flex justify-between items-center my-5 pr-20">
-            <div href="index.html" class="  ml-20 font-[Montserrat] bg-gradient-to-r from-orange-600 to-blue-400 inline-block text-transparent bg-clip-text      self-center text-2xl font-bold  whitespace-nowrap dark:text-white pl-14">
+            <div class=" ml-4 font-[Montserrat] bg-gradient-to-r from-teal-500 to-blue-600 inline-block text-transparent bg-clip-text      self-center text-2xl font-bold  whitespace-nowrap dark:text-white pl-14">
                 Rohi Aluede
             </div>
             <div class=" font-semibold font-[Montserrat] text-[30] flex md:text-right justify-end text-right">
@@ -43,74 +63,98 @@
                 <a href="skills.html" class="hover:text-green-500  dark:text-black px-4 py-2 no-underline tranition duration-300 bg bg-transparent ">
                     Skills
                 </a>
-                
                 <a download="rohialuede.odt" href="rohialuede.odt" target="_blank" class="  text-black-500  hover:text-red-500  dark:text-black px-4 py-2 no-underline tranition duration-300 bg bg-transparent ">
                     Resume
                 </a>
                 
             </div>
-            
-            
         </div>
     </nav>
-    <img src="assets/navabrline.png" alt="" class="h-8 w-full w-screen "/>
-    
-    
-    <div class="  mx-auto px-4 py-12">
-        
-        
-        <!-- Header -->
-        <header class="mb-12">
-            <p class="text-sm text-gray-500 mb-2">Rohi Aluede</p>
-            <p class="text-sm text-gray-500 mb-6">Project Collection</p>
-            <h1 class="font-[Montserrat] text-4xl font-bold mb-12">Local Chatter</h1>
-        </header>
-        
-        <!-- 
-        <div class="w-full h-96 bg-gray-100 mb-8">
-            <img src="/api/placeholder/1200/400" alt="Project main image" class="w-full h-full object-cover"/>
+
+    <!-- Hero Section -->
+    <div class="relative h-[500px] bg-gradient-to-r from-teal-500 to-blue-600 pt-16">
+        <div class="absolute inset-0 opacity-20" data-aos="fade-down">
+           c
         </div>
-        Main Image --> 
-        <!-- Image Grid -->
-        <div class="grid grid-cols-3 gap-4 mb-16">
-            <div class="aspect-square bg-gray-100">
-                <img src="assets/localchatterlogo_house.png" alt="Project thumbnail 1" class="w-full h-full object-cover"/>
+        <div class="relative container mx-auto px-4 h-full flex items-center">
+            <div class="text-white" data-aos="fade-up">
+                <p class="text-lg mb-2">Project Collection</p>
+                <h1 class="text-5xl font-bold mb-4">Local Chatter</h1>
+                <p class="text-xl opacity-90">Safety for your town, safety for yourself.</p>
             </div>
-            <div class="aspect-square bg-gray-100">
-                <img src="assets/localchatterlogo.png" alt="Project thumbnail 2" class="w-full h-full object-cover"/>
-            </div>
-            <div class="aspect-square bg-gray-100">
-                <img src="assets/localchatterposter.png" alt="Project thumbnail 3" class="w-full h-full object-cover"/> </div>
-            </div>
-            
-            <!-- Text Content -->
-            <div class="font-[Montserrat]  grid grid-cols-2 gap-12">
-                <div>
-                    <h2 class="text-lg font-semibold mb-4 ">Overview</h2>
-                    <p class="text-gray-600 leading-relaxed">
-                        LocalChatter is an app created as a solution to the issues of safety in your 
-                        local area and accessibility to the council. Our aim is to find a way to access the
-                        council much more effectively and quicker and for them to be able to interact with ourselves, the local people. Another aim of ours is to find a way to 
-                        solve safety issues/hazards in the area. E.g.: A broken traffic light. 
-                        This links in with contacting the council as these are all local issues that are unfortunately not solved as quickly as they should.      
-                        From all the meetings we've held, we have gathered info on some of the biggest local 
-                        issues they come across and some facilities we can add to the app. Specifically from Emer Tóibín and Wayne Harding, we found that they work only from 9 – 5, Monday – Friday. This was a clear example of why our app is needed, they also told us that they receive a lot of calls regarding issues primarily housing and community issues.  
-                        
-                    </p>
-                    <a class="text-orange-600 underline"  href="https://btyoungscientist.com/past-projects/localchatter/">https://btyoungscientist.com/past-projects/localchatter/ </a>  
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container mx-auto px-4 py-16">
+        <!-- Overview & Role Section -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+            <!-- Overview Card -->
+            <div class="bg-white rounded-xl shadow-lg p-8" data-aos="fade-right">
+                <h2 class="text-2xl font-bold mb-6 text-gray-800">Overview</h2>
+                <div class="text-gray-600 space-y-4">
+                    <p>LocalChatter is an app created as a solution to the issues of safety in your local area and accessibility to the council. Our aim is to find a way to access the council much more effectively and quicker and for them to be able to interact with ourselves, the local people.</p>
+                    <p>Another of ours is to find a way to solve safety issues/hazards in the area. E.g.: A broken traffic light. This links in with contacting the council as these are all local issues that are unfortunately not solved as quickly as they should.</p>
                 </div>
-                <div>
-                    <h2 class="text-lg font-semibold mb-4">My Role</h2>
-                    <p class="text-gray-600 leading-relaxed">
-                        To develop LocalChatter, I programmed in Java using Android Studio and built the backend with Google Firebase. I also led a team of three, ensuring effective project planning and management. Together, we created promotional materials such as videos and posters, conducted insightful surveys, and collaborated closely with politician Emer Tóibín, meeting with her multiple times to discuss the app's development and impact.                </p>
-                    </div>
-                </div>
-                
-                <!-- Footer -->
-                <footer class="mt-24 font-[Montserrat]  flex justify-between text-sm text-gray-500">
-                    <span>March 2024</span>
-                    <span>Featured</span>
-                </footer>
             </div>
-        </body>
-        </html>
+
+            <!-- Role Card -->
+            <div class="bg-white rounded-xl shadow-lg p-8" data-aos="fade-left">
+                <h2 class="text-2xl font-bold mb-6 text-gray-800">My Role</h2>
+                <div class="text-gray-600 space-y-4">
+                    <p>To develop LocalChatter, I:</p>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li>Programmed in Java using Android Studio</li>
+                        <li>Built the backend with Google Firebase</li>
+                        <li>Led a team of three members</li>
+                        <li>Created promotional materials</li>
+                        <li>Conducted insightful surveys</li>
+                        <li>Collaborated with politician Emer Tóibín</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Gallery -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16" data-aos="fade-up">
+            <div class="bg-black rounded-lg overflow-hidden group">
+                <img src="assets/localchatterlogo_house.png" alt="LocalChatter Logo" class="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-105" />
+            </div>
+            <div class="bg-black rounded-lg overflow-hidden group">
+                <img src="/api/placeholder/400/400" alt="App Interface" class="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-105" />
+            </div>
+            <div class="bg-black rounded-lg overflow-hidden group">
+                <img src="assets/localchatterposter.png" alt="Project Poster" class="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-105" />
+            </div>
+        </div>
+
+        <!-- Stats Section -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6" data-aos="fade-up">
+            <div class="bg-white rounded-xl shadow-lg p-6 text-center">
+                <h3 class="text-4xl font-bold text-teal-600">Finalists</h3>
+                <p class="text-gray-600 mt-2">BTYSTE 2021</p>
+            </div>
+            <div class="bg-white rounded-xl shadow-lg p-6 text-center">
+                <h3 class="text-4xl font-bold text-teal-600">3+</h3>
+                <p class="text-gray-600 mt-2">Team Members</p>
+            </div>
+            <div class="bg-white rounded-xl shadow-lg p-6 text-center">
+                <h3 class="text-4xl font-bold text-teal-600">100%</h3>
+                <p class="text-gray-600 mt-2">Response Rate</p>
+            </div>
+            <div class="bg-white rounded-xl shadow-lg p-6 text-center">
+                <h3 class="text-4xl font-bold text-teal-600">2021</h3>
+                <p class="text-gray-600 mt-2">Launch Year</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+    </script>
+</body>
+</html>

@@ -1,8 +1,18 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content ="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale-1.0"/> 
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.config.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
     
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,14 +35,26 @@
     rel="stylesheet"
     />
     
-    <title> Rohi Aluede</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-white min-h-screen">
     
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Outfit:wght@400;500;600;800&display=swap');
+    </style>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" type="text/css" href="design.css"/>
+    
+    <title>
+        Rohi Aluede
+    </title>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+</head>
+<body class="bg-gradient-to-b from-slate-50 to-slate-100 min-h-screen font-[Montserrat]">
+    <!-- Navigation -->
     <nav class="bg-white  top-0 left-0 z-50 h-20  "> 
         <div class=" flex justify-between items-center my-5 pr-20">
-            <div href="index.html" class="  ml-20 font-[Montserrat] bg-gradient-to-r from-orange-600 to-blue-400 inline-block text-transparent bg-clip-text      self-center text-2xl font-bold  whitespace-nowrap dark:text-white pl-14">
+            <div class=" ml-4 font-[Montserrat] bg-gradient-to-r from-teal-500 to-blue-600 inline-block text-transparent bg-clip-text      self-center text-2xl font-bold  whitespace-nowrap dark:text-white pl-14">
                 Rohi Aluede
             </div>
             <div class=" font-semibold font-[Montserrat] text-[30] flex md:text-right justify-end text-right">
@@ -47,58 +69,87 @@
                 </a>
                 
             </div>
-            
-            
         </div>
     </nav>
-    <img src="assets/navabrline.png" alt="" class="h-8 w-full"/>
     
-    <div class="  mx-auto px-4 py-12">
-        <!-- Header -->
-        <header class="mb-12">
-            <p class="text-sm text-gray-500 mb-2">Rohi Aluede</p>
-            <p class="text-sm text-gray-500 mb-6">Project Collection</p>
-            <h1 class="text-4xl font-bold mb-12">Cubester</h1>
-        </header>
-        
-        <!-- Main Image -->
-        <!-- maybe in future for video here
-        <div class="w-full h-96 bg-gray-100 mb-8">
-            <img src="/api/placeholder/1200/400" alt="Project main image" class="w-full h-full object-cover"/>
+
+    <!-- Hero Section -->
+    <div class="relative h-[500px] bg-gradient-to-r from-teal-500 to-blue-600 pt-16">
+        <div class="absolute inset-0 opacity-20" data-aos="fade-down">
+         
         </div>
-        -->
-        <!-- Image Grid -->
-        
-        <div class="grid  gap-4 mb-24 mx-24 mt-24">
-            <div class="aspect-square bg-gray-100 content-center">
-                <img src="assets/sketch-1586045127607.png" alt="Project thumbnail 1" class="w-full h-full object-cover"/>
+        <div class="relative container mx-auto px-4 h-full flex items-center">
+            <div class="text-white" data-aos="fade-up">
+                <p class="text-lg mb-2">Project Collection</p>
+                <h1 class="text-5xl font-bold mb-4">Cubester</h1>
+                <p class="text-xl opacity-90">Time bends. Space narrows. You move.</p>
             </div>
         </div>
-        
-        <!-- Text Content -->
-        <div class="grid grid-cols-2 gap-12">
-            <div>
-                <h2 class="text-lg font-semibold mb-4">Overview</h2>
-                <p class="text-gray-600 leading-relaxed">
-                    Cubester is a mobile game I created when I was younger, a game where you would alter time to help a cube maneuver through small gaps in a 
-                    variety of different levels and even different game-modes.
-                    I planned to release it to the Google Playstore and use ads and in-game purchases to monetise the game. 
-                </p>
-            </div>
-            <div>
-                <h2 class="text-lg font-semibold mb-4">My Role</h2>
-                <p class="text-gray-600 leading-relaxed">
-                    I was the sole developer of Cubester and handled it's programming in C# with Unity
-                    to the creation of the assets it used in the game. 
-                </p>
-            </div>
-        </div>
-        
-        <!-- Footer -->
-        <footer class="mt-24 flex justify-between text-sm text-gray-500">
-            <span>March 2024</span>
-            <span>Featured</span>
-        </footer>
     </div>
+
+    <!-- Main Content -->
+    <div class="container mx-auto px-4 py-16">
+        <!-- Overview & Role Section -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+            <!-- Overview Card -->
+            <div class="bg-white rounded-xl shadow-lg p-8" data-aos="fade-right">
+                <h2 class="text-2xl font-bold mb-6 text-gray-800">Overview</h2>
+                <div class="text-gray-600 space-y-4">
+                    <p>Cubester is a mobile game I created when I was younger, a game where you would alter time to help a cube maneuver through small gaps in a variety of different levels and even different game-modes.</p>
+                    <p> I planned to release it to the Google Playstore and use ads and in-game purchases to monetise the game.</p>
+                </div>
+            </div>
+
+            <!-- Role Card -->
+            <div class="bg-white rounded-xl shadow-lg p-8" data-aos="fade-left">
+                <h2 class="text-2xl font-bold mb-6 text-gray-800">My Role</h2>
+                <div class="text-gray-600 space-y-4">
+                    <p>To develop Cubester, I:</p>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li>Programmed in C# using Unity</li>
+                        <li>Created user interface</li>
+                        <li>Created 3D models using Blender</li>
+                        <li>Planned the development process</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Gallery -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16" data-aos="fade-up">
+            <div class="bg-black rounded-lg overflow-hidden group">
+                <img src="assets/sketch-1586045127607.png" alt="LocalChatter Logo" class="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-105" />
+            </div>
+ 
+        </div>
+
+        <!-- Stats Section -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6" data-aos="fade-up">
+            <div class="bg-white rounded-xl shadow-lg p-6 text-center">
+                <h3 class="text-4xl font-bold text-teal-600">19,000+</h3>
+                <p class="text-gray-600 mt-2">Files</p>
+            </div>
+            <div class="bg-white rounded-xl shadow-lg p-6 text-center">
+                <h3 class="text-4xl font-bold text-teal-600">Rohi Aluede</h3>
+                <p class="text-gray-600 mt-2">Developed solely by</p>
+            </div>
+            <div class="bg-white rounded-xl shadow-lg p-6 text-center">
+                <h3 class="text-4xl font-bold text-teal-600">2,000+</h3>
+                <p class="text-gray-600 mt-2">Lines of code</p>
+            </div>
+            <div class="bg-white rounded-xl shadow-lg p-6 text-center">
+                <h3 class="text-4xl font-bold text-teal-600">2022</h3>
+                <p class="text-gray-600 mt-2">Created</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+    </script>
 </body>
 </html>
